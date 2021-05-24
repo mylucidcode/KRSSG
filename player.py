@@ -22,6 +22,7 @@ def send(a):
 def recd():
     message = client.recv(2048).decode(FORMAT)
     message = eval(message)
+    print(message)
     a = max(message)
     a = str(a)
     send(a)
